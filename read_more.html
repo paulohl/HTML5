@@ -1,0 +1,52 @@
+<div style="font-family: 'Giorgio', serif; color: #f0f0f0; line-height: 1.6;">
+
+  <p>
+    sculpIT.XYZ is a joint venture born out of necessity, instinct, and maybe a little bit of madness. 
+    It is the place where all the pieces of sculpIT fit together — from the practical to the speculative. 
+  </p>
+
+  <a href="#" id="readmore-toggle" 
+     style="display:inline-block; margin-top:10px; color:#00b8d9; text-decoration:none; font-weight:bold; font-size:0.9em;">
+     + Read More
+  </a>
+
+  <div id="readmore-content" style="display:none; margin-top:15px; color:#ccc;">
+    <p>
+      We never had the luxury of billions in venture cash, but we did have something harder to fake: persistence, scars, 
+      and the stubborn refusal to stay in line. That’s how projects that once looked like teasing side gigs became living, 
+      breathing branches of the sculpIT tree.
+    </p>
+    <p>
+      If Google was the flagship inside Alphabet, then sculpIT.fitness is our anchor. Everything else radiates outward — 
+      design, venture, online labs, and the yet-to-be-named. Unlike Alphabet, there’s no Sergey in this story, no boardroom drama, 
+      no committee of strategists. There’s just me — the one-eyed, one-legged founder — pulling the strings and paying the bills, 
+      laughing at the absurdity while still building things that matter.
+    </p>
+    <p>
+      We’ve long believed that comfort is poison. To stay relevant, you have to take risks that feel slightly ridiculous, 
+      even a little dangerous. So yes, we’ll keep making bets that others call crazy. We’ll keep carving new initials into 
+      the dark stone of technology. And we’ll do it with the resources we have — which is to say, not much, but enough.
+    </p>
+    <p>
+      sculpIT.XYZ is not a consumer brand. It is a skeleton key — a structure to let the branches grow wild while still tied 
+      to the same roots. Each branch stands alone, yet they all bleed the same ink.
+    </p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggle = document.getElementById("readmore-toggle");
+    const content = document.getElementById("readmore-content");
+    toggle.addEventListener("click", function(e) {
+      e.preventDefault();
+      if (content.style.display === "none") {
+        content.style.display = "block";
+        toggle.textContent = "- Read Less";
+      } else {
+        content.style.display = "none";
+        toggle.textContent = "+ Read More";
+      }
+    });
+  });
+</script>
